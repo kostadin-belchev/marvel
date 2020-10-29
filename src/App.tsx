@@ -3,7 +3,7 @@ import { HomeContainer } from './pages/home'
 import { Route, Switch } from 'react-router-dom'
 import { CharactersContainer } from './pages/characters'
 import { FavouritesContainer } from './pages/favourites'
-import { Header } from './pages/common'
+import { Footer, Header } from './pages/common'
 
 export const App = (): JSX.Element => {
   return (
@@ -15,7 +15,7 @@ export const App = (): JSX.Element => {
         <Route path="/favourites" component={FavouritesContainer} />
         {/* <Route path="/characters/:id" component={CharacterDetails} /> */}
       </Switch>
-      {/* <Footer /> */}
+      <Footer />
     </>
   )
 }
